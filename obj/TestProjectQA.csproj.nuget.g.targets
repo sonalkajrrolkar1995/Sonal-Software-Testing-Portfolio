@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ImportGroup Condition=" '$(ExcludeRestorePackageImports)' != 'true' ">
+    <Import Project="$(NuGetPackageRoot)system.text.json\8.0.5\buildTransitive\net6.0\System.Text.Json.targets" Condition="Exists('$(NuGetPackageRoot)system.text.json\8.0.5\buildTransitive\net6.0\System.Text.Json.targets')" />
+    <Import Project="$(NuGetPackageRoot)selenium.webdriver\4.29.0\buildTransitive\Selenium.WebDriver.targets" Condition="Exists('$(NuGetPackageRoot)selenium.webdriver\4.29.0\buildTransitive\Selenium.WebDriver.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.testing.platform.msbuild\1.5.3\buildTransitive\Microsoft.Testing.Platform.MSBuild.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.testing.platform.msbuild\1.5.3\buildTransitive\Microsoft.Testing.Platform.MSBuild.targets')" />
+    <Import Project="$(NuGetPackageRoot)nunit3testadapter\5.0.0\build\netcoreapp3.1\NUnit3TestAdapter.targets" Condition="Exists('$(NuGetPackageRoot)nunit3testadapter\5.0.0\build\netcoreapp3.1\NUnit3TestAdapter.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.codecoverage\17.13.0\build\netstandard2.0\Microsoft.CodeCoverage.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.codecoverage\17.13.0\build\netstandard2.0\Microsoft.CodeCoverage.targets')" />
+    <Import Project="$(NuGetPackageRoot)microsoft.net.test.sdk\17.13.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.targets" Condition="Exists('$(NuGetPackageRoot)microsoft.net.test.sdk\17.13.0\build\netcoreapp3.1\Microsoft.NET.Test.Sdk.targets')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild.tools\8.11.2\buildTransitive\IKVM.MSBuild.Tools.targets" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild.tools\8.11.2\buildTransitive\IKVM.MSBuild.Tools.targets')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.msbuild\8.11.2\buildTransitive\IKVM.MSBuild.targets" Condition="Exists('$(NuGetPackageRoot)ikvm.msbuild\8.11.2\buildTransitive\IKVM.MSBuild.targets')" />
+    <Import Project="$(NuGetPackageRoot)ikvm.image\8.11.2\buildTransitive\IKVM.Image.targets" Condition="Exists('$(NuGetPackageRoot)ikvm.image\8.11.2\buildTransitive\IKVM.Image.targets')" />
+    <Import Project="$(NuGetPackageRoot)ikvm\8.11.2\buildTransitive\IKVM.targets" Condition="Exists('$(NuGetPackageRoot)ikvm\8.11.2\buildTransitive\IKVM.targets')" />
+    <Import Project="$(NuGetPackageRoot)coverlet.collector\6.0.4\build\netstandard2.0\coverlet.collector.targets" Condition="Exists('$(NuGetPackageRoot)coverlet.collector\6.0.4\build\netstandard2.0\coverlet.collector.targets')" />
+  </ImportGroup>
+</Project>
