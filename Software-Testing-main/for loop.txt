@@ -1,0 +1,18 @@
+Java For Loop execute in this order -
+
+Initialisation
+Check Condition
+Increment/Decrements
+Java For loop in Concise Version of While Loop and also an Entry Control Loop.
+
+Unlike a do-while loop, a for-loop will not let a variable through even once without testing. Let’s see its syntax than we talk about:
+
+Syntax-
+
+ for (initialization condition; testing condition; 
+ increment/decrement) 
+{ 
+ statement(s) 
+} 
+
+https://www.quora.com/In-which-order-is-a-for-loop-in-java-executed

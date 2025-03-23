@@ -1,0 +1,45 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+public class ComplexTestExample {
+    WebDriver driver;
+
+    @BeforeClass
+    public void setUp() {
+        System.setProperty("webdriver.chrome.driver", "/path/to/chromedriver");
+        driver = new ChromeDriver();
+    }
+
+    @Test
+    public void testFormSubmission() {
+        // Navigate to the form
+        driver.get("https://www.example.com/form");
+
+        // Fill out the form
+        WebElement nameField = driver.findElement(By.id("name"));
+        nameField.sendKeys("Test User");
+
+        WebElement emailField = driver.findElement(By.id("email"));
+        emailField.sendKeys("test@example.com");
+
+        WebElement submitButton = driver.findElement(By.id("submit"));
+        submitButton.click();
+
+        // Wait for the success message to appear
+        WebElement successMessage = driver.findElement(By.id("success-message"));
+
+        // Validate the success message
+        Assert.assertEquals(successMessage.getText(), "Thank you for your submission!");
+    }
+
+    @AfterClass
+    public void tearDown() {
+        driver.quit();
+    }
+}
